@@ -1,0 +1,42 @@
+{
+  "name": "@akito/riscv-r32i",
+  "version": "0.1.0",
+  "description": "A source xPack for compiling custom elf",
+  "main": "",
+  "scripts": {
+    "init": "mkdir -p build && cd build && cmake ..",
+    "build": "cmake --build build --target helloworld",
+    "clean": "cmake --build build --target clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anozaki/riscv-r32i-sim.git"
+  },
+  "homepage": "https://github.com/anozaki/riscv-r32i-sim/",
+  "bugs": {
+    "url": "https://github.com/anozaki/riscv-r32i-sim/issues/"
+  },
+  "keywords": [
+    "xpack"
+  ],
+  "author": {
+    "name": "Akito Nozaki",
+    "email": "akito@tanoshi.net"
+  },
+  "license": "MIT",
+  "config": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "xpack": {
+    "minimumXpmRequired": "0.14.2",
+    "dependencies": {},
+    "devDependencies": {
+      "@xpack-dev-tools/riscv-none-elf-gcc": "12.2.0-1.1",
+      "@xpack-dev-tools/cmake": "3.22.6-1.1",
+      "@xpack-dev-tools/qemu-riscv": "7.1.0-1.1"
+    },
+    "properties": {},
+    "actions": {},
+    "buildConfigurations": {}
+  }
+}
