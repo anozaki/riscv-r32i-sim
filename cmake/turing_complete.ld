@@ -11,10 +11,6 @@ MEMORY
     * 4kb of read/write memory
     */
     RAM (RW): org = 0x1000000, len = 4K
-
-    /*
-
-    */
 }
 
 ENTRY(_start)
