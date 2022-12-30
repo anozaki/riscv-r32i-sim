@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>1</version>
+  <attributes>
+    <entry>
+      <string>preloadProgram</string>
+      <boolean>true</boolean>
+    </entry>
+    <entry>
+      <string>preloadProgramFile</string>
+      <file>/home/akito/Projects/Akito/riscv-r32i/bin/helloworld.bin</file>
+    </entry>
+  </attributes>
+  <visualElements>
+    <visualElement>
+      <elementName>riscv.dig</elementName>
+      <elementAttributes/>
+      <pos x="900" y="500"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Clock</elementName>
+      <elementAttributes>
+        <entry>
+          <string>runRealTime</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>clk</string>
+        </entry>
+        <entry>
+          <string>Frequency</string>
+          <int>10</int>
+        </entry>
+      </elementAttributes>
+      <pos x="780" y="500"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="780" y="500"/>
+      <p2 x="900" y="500"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
